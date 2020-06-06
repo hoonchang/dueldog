@@ -10,7 +10,7 @@
    bottom: 0;
    width: 100%;
    height: 33%;
-   background-color: DarkCyan;
+   background-color: LightSeaGreen;
    color: white;
    text-align: center;
 }
@@ -52,7 +52,7 @@ top: 25px;
    width: 500px;
    height: 250px;
    padding: 0px;
-   background: #66cdaa;
+   background: MediumSpringGreen;
    -webkit-border-radius: 10px;
    -moz-border-radius: 10px;
    border-radius: 10px;
@@ -65,7 +65,7 @@ top: 25px;
     position: absolute;
     border-style: solid;
     border-width: 20px 0 20px 30px;
-    border-color: transparent #66cdaa;
+    border-color: transparent MediumSpringGreen;
     display: block;
     width: 0;
     z-index: 1;
