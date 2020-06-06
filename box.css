@@ -57,3 +57,7 @@ text-transform: none;
     right: -35px;
     top: 119px;
 }
+
+.img {
+  float: right;
+}
