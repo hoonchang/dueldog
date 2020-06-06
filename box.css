@@ -5,15 +5,17 @@
 }
 
 .grey-box {
+    position: absolute;
     background-color: grey;
     color: black;
     bottom:0px;
-    height: 500px;
+    height: 400px;
+    width: 1000px;
     <!--other positioning attributes-->
 }
 
 #demoFont {
-font-family: "Comic Sans MS", cursive, sans-serif;
+font-family: Tahoma, Geneva, sans-serif;
 font-size: 50px;
 letter-spacing: 2px;
 word-spacing: 2px;
