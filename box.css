@@ -8,9 +8,9 @@
     position: absolute;
     background-color: grey;
     color: black;
-    top: 1000px;
+    bottom: 0px;
     height: 400px;
-    width: 2000px;
+    width: 750px;
     <!--other positioning attributes-->
 }
 
