@@ -40,13 +40,13 @@ font-variant: small-caps;
 text-transform: none;
 text-align: center;
 position: relative;
-top:20%;
+top:15%;
 }
 
 .bubble
 {
    position: absolute;
-   top: 325px;
+   top: 350px;
    left:25px;
    width: 500px;
    height: 250px;
