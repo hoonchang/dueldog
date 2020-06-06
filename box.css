@@ -4,15 +4,14 @@
     <!--other positioning attributes-->
 }
 
-.grey-box {
-    position: absolute;
-    background-color: grey;
-    color: black;
-    bottom: 0px;
-    left: 0px;
-    height: 400px;
-    width: 1000px;
-    <!--other positioning attributes-->
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
 }
 
 #demoFont {
