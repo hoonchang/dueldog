@@ -5,12 +5,12 @@
 }
 
 #demoFont {
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-font-size: 50px;
-letter-spacing: 0px;
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 30px;
+letter-spacing: 2px;
 word-spacing: 2px;
 color: #000000;
-font-weight: 400;
+font-weight: 700;
 text-decoration: none solid rgb(68, 68, 68);
 font-style: normal;
 font-variant: small-caps;
@@ -56,8 +56,4 @@ text-transform: none;
     z-index: 0;
     right: -35px;
     top: 119px;
-}
-
-.img {
-  float: right;
 }
