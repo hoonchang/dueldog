@@ -1,6 +1,6 @@
 .white-box {
     background-color: white;
-    color: DarkCyan;
+    color: black;
     <!--other positioning attributes-->
 }
 
@@ -10,7 +10,7 @@
    bottom: 0;
    width: 100%;
    height: 33%;
-   background-color: grey;
+   background-color: DarkCyan;
    color: white;
    text-align: center;
 }
@@ -52,7 +52,7 @@ top: 25px;
    width: 500px;
    height: 250px;
    padding: 0px;
-   background: #62eeb1;
+   background: #66cdaa;
    -webkit-border-radius: 10px;
    -moz-border-radius: 10px;
    border-radius: 10px;
