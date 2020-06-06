@@ -25,7 +25,8 @@ text-decoration: none solid rgb(68, 68, 68);
 font-style: normal;
 font-variant: small-caps;
 text-transform: none;
-
+position: relative;
+top:50%;
 }
 
 #demoFont2 {
