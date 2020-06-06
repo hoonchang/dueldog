@@ -4,9 +4,17 @@
     <!--other positioning attributes-->
 }
 
+.grey-box {
+    background-color: grey;
+    color: black;
+    bottom:0px;
+    height: 500px;
+    <!--other positioning attributes-->
+}
+
 #demoFont {
 font-family: "Comic Sans MS", cursive, sans-serif;
-font-size: 30px;
+font-size: 50px;
 letter-spacing: 2px;
 word-spacing: 2px;
 color: #000000;
@@ -19,9 +27,9 @@ text-transform: none;
 
 .bubble
 {
-   position: relative;
+   position: absolute;
    top: 300px;
-   left: 75px;
+   left:50px;
    width: 500px;
    height: 250px;
    padding: 0px;
