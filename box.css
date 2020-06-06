@@ -20,8 +20,8 @@ text-transform: none;
 .bubble
 {
    position: relative;
-   width: 335px;
-   height: 180px;
+   width: 400px;
+   height: 200px;
    padding: 0px;
    background: #62eeb1;
    -webkit-border-radius: 10px;
@@ -41,7 +41,7 @@ text-transform: none;
     width: 0;
     z-index: 1;
     right: -30px;
-    top: 121px;
+    top: 140px;
 }
 
 .bubble:before
@@ -55,5 +55,5 @@ text-transform: none;
     width: 0;
     z-index: 0;
     right: -35px;
-    top: 119px;
+    top: 138px;
 }
