@@ -10,7 +10,7 @@
   width: 100%;
   height: 10%;
   /*background-color: Grey; LightSlateGrey SlateGrey DarkGrey LightGrey DimGrey #0e0e0e 7ffccc*/
-  background-color: #7ffccc;
+  background-color: #0e0e0e;
   color: white;
   text-align: center;
 }
@@ -22,7 +22,7 @@
    width: 100%;
    height: 30%;
    /*background-color: LightSeaGreen; 24a873 c1bfbf 8a8988 7FFFD4 fa0060 00ddfa 00fa1d 00af6b 007d4d 004b2e 4cfbb8 7ffccc b2fde0 20b2aa 67cabc 3eb489*/
-   background-color: #7ffccc;
+   background-color: #0e0e0e;
    color: white;
    text-align: center;
 }
@@ -47,7 +47,7 @@ font-family: Tahoma, Geneva, sans-serif;
 font-size: 55px;
 letter-spacing: 2px;
 word-spacing: 2px;
-color: #000000;
+color: #ffffff;
 font-weight: 700;
 text-decoration: none solid rgb(68, 68, 68);
 font-style: normal;
