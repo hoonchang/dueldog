@@ -9,8 +9,8 @@
   top: 0;
   width: 100%;
   height: 10%;
-  /*background-color: Grey;*/
-  background-color: LightSlateGrey;
+  /*background-color: Grey; LightSlateGrey*/
+  background-color: SlateGrey;
   color: white;
   text-align: center;
 }
