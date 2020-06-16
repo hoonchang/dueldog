@@ -18,11 +18,10 @@
 .description {
   position: relative;
   bottom: 20px;
-  right: 20px;
+  right: 0px;
   background-color: black;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  text-align: center;
 }
 
 
@@ -80,6 +79,7 @@
 .row:nth-child(1) {
   background: #1ed661;
 }
+
 
 #title {
 
