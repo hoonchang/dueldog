@@ -4,7 +4,8 @@
   background: #000000;
 }
 
-#image {
+.prize {
+  position: relative;
   width: 250px;
   height: 150px;
   border-top: 0px solid #080413;
@@ -12,6 +13,18 @@
   border-left: 2px solid #080413;
   border-bottom: 0px solid #080413;
 }
+
+/* Bottom right text */
+.description {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 
 #container {
   width: 250px;
