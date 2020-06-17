@@ -4,6 +4,16 @@
   background: #000000;
 }
 
+#header {
+  width: 250px;
+  height: 40px;
+  position: relative;
+  border-right: 2px solid #080413;
+  border-left: 2px solid #080413;
+  border-bottom: 0px solid #080413;
+  background: #1ed661;
+}
+
 .prize {
   position: relative;
   width: 250px;
@@ -63,7 +73,7 @@
 .name {
   position: relative;
   display: inline-block;
-  width: 65%;
+  width: 60%;
   line-height: 40px;
   left: 10px;
   font-family: "Orbitron";
@@ -81,7 +91,7 @@
 .score {
   position: relative;
   display: inline-block;
-  width: 25%;
+  width: 30%;
   font-family: "Orbitron";
   font-size: 20px;
   letter-spacing: 0px;
@@ -96,23 +106,23 @@
 }
 
 .row:nth-child(1) {
-  background: #c1bfbf;
+  background: #D6AF36;
 }
 
 .row:nth-child(2) {
-  background: #1ed661;
+  background: #A7A7AD;
 }
 
 .row:nth-child(3) {
-  background: #c1bfbf;
+  background: #985602;
 }
 
 .row:nth-child(4) {
-  background: #1ed661;
+  background: #ffffff;
 }
 
 .row:nth-child(5) {
-  background: #c1bfbf;
+  background: #ffffff;
 }
 
 
