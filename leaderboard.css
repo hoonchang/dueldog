@@ -41,7 +41,7 @@
   border-top: 2px solid #1ed661;
   border-right: 2px solid #080413;
   border-left: 2px solid #080413;
-  border-bottom: 0.5px solid #080413;
+  border-bottom: 2px solid #000000;
 }
 
 .row {
@@ -122,6 +122,7 @@
 
 .row:nth-child(5) {
   background: #ffffff;
+  border-bottom: 0px solid #000000;
 }
 
 
