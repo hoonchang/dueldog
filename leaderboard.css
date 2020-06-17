@@ -45,11 +45,10 @@
 .rank {
   position: relative;
   display: inline-block;
-  width: 15%;
+  width: 10%;
   line-height: 40px;
-  top: -2px;
   left: 10px;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: "MuseoModerno";
   font-size: 20px;
   letter-spacing: 0px;
   word-spacing: 0px;
@@ -64,9 +63,8 @@
 .name {
   position: relative;
   display: inline-block;
-  width: 60%;
+  width: 65%;
   line-height: 40px;
-  top: -2px;
   left: 10px;
   font-family: "Orbitron";
   font-size: 20px;
@@ -94,6 +92,7 @@
   font-style: normal;
   font-variant: normal;
   text-transform: none;
+  line-height: 40px;
 }
 
 .row:nth-child(1) {
