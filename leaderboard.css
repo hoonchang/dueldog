@@ -1,11 +1,11 @@
 #box {
-  width: 304px;
+  width: 280px;
   height: 50px;
   background: #000000;
 }
 
 #header {
-  width: 300px;
+  width: 276px;
   height: 40px;
   position: relative;
   border-right: 2px solid #000000;
@@ -14,7 +14,7 @@
 }
 
 #container {
-  width: 300px;
+  width: 276px;
   height: auto;
   border-top: 0px solid #1ed661;
   border-right: 2px solid #000000;
@@ -33,11 +33,11 @@
 .rank {
   position: relative;
   display: inline-block;
-  width: 25%;
+  width: 27%;
   line-height: 40px;
-  left: 25px;
+  left: 27px;
   font-family: "MuseoModerno";
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 0px;
   word-spacing: 0px;
   color: #000000;
@@ -51,10 +51,10 @@
 .name {
   position: relative;
   display: inline-block;
-  width: 50%;
+  width: 48%;
   line-height: 40px;
   font-family: "Orbitron";
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 0px;
   word-spacing: 0px;
   color: #000000;
@@ -70,7 +70,7 @@
   display: inline-block;
   width: 25%;
   font-family: "Orbitron";
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 0px;
   word-spacing: 0px;
   color: #000000;
@@ -112,7 +112,7 @@
   color: #ffffff;
   position: relative;
   top: 28%;
-  left: 5%;
+  left: 4%;
 }
 
 #headerFont {
@@ -120,7 +120,7 @@
   display: inline-block;
   line-height: 40px;
   font-family: "Orbitron";
-  font-size: 20px;
+  font-size: 17px;
   letter-spacing: 0px;
   word-spacing: 0px;
   color: #ffffff;
