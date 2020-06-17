@@ -9,8 +9,6 @@
   <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=MuseoModerno' rel='stylesheet'>
 
-  <script src="arrays.js"></script>
-
 </head>
 
 
@@ -43,6 +41,29 @@
       <div class="rank">5</div><div class="name" id="p5"></div><div class="score" id="s5"></div>
     </div>
   </div>
+
+<script>
+  var player = ["AlMilker", "Tiski", "NoVa", "nitsuA", "fiend"];
+  var score = ["500", "400", "300", "200", "100"];
+
+  function getElement(id, arr, num) {
+  	document.getElementById(id).innerHTML = arr[num];
+  	return;
+	}
+
+    getElement("p1", player, 0);
+ 		getElement("p2", player, 1);
+  	getElement("p3", player, 2);
+  	getElement("p4", player, 3);
+  	getElement("p5", player, 4);
+
+  	getElement("s1", score, 0);
+  	getElement("s2", score, 1);
+  	getElement("s3", score, 2);
+  	getElement("s4", score, 3);
+  	getElement("s5", score, 4);
+
+  </script>
 
 </body>
 
