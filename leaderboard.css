@@ -1,22 +1,22 @@
 #box {
-  width: 254px;
+  width: 304px;
   height: 50px;
   background: #000000;
 }
 
 #header {
-  width: 250px;
+  width: 300px;
   height: 40px;
   position: relative;
   border-right: 2px solid #080413;
   border-left: 2px solid #080413;
-  border-bottom: 0px solid #080413;
+  border-bottom: 0px solid #1ed661;
   background: #1ed661;
 }
 
 .prize {
   position: relative;
-  width: 250px;
+  width: 300px;
   height: 150px;
   border-top: 0px solid #080413;
   border-right: 2px solid #080413;
@@ -36,9 +36,9 @@
 
 
 #container {
-  width: 250px;
+  width: 300px;
   height: auto;
-  border-top: 2px solid #080413;
+  border-top: 2px solid #1ed661;
   border-right: 2px solid #080413;
   border-left: 2px solid #080413;
   border-bottom: 0.5px solid #080413;
@@ -49,15 +49,15 @@
   display: block;
   width: 100%;
   height: 40px;
-  border-bottom: 1.5px solid #000000;
+  border-bottom: 1px solid #d2d0d0;
 }
 
 .rank {
   position: relative;
   display: inline-block;
-  width: 10%;
+  width: 25%;
   line-height: 40px;
-  left: 10px;
+  left: 25px;
   font-family: "MuseoModerno";
   font-size: 20px;
   letter-spacing: 0px;
@@ -73,9 +73,8 @@
 .name {
   position: relative;
   display: inline-block;
-  width: 60%;
+  width: 50%;
   line-height: 40px;
-  left: 10px;
   font-family: "Orbitron";
   font-size: 20px;
   letter-spacing: 0px;
@@ -91,7 +90,7 @@
 .score {
   position: relative;
   display: inline-block;
-  width: 30%;
+  width: 25%;
   font-family: "Orbitron";
   font-size: 20px;
   letter-spacing: 0px;
@@ -106,19 +105,19 @@
 }
 
 .row:nth-child(1) {
-  background: #FEE101;
+  background: #ffffff;
 }
 
 .row:nth-child(2) {
-  background: #D7D7D7;
+  background: #f2f2f2;
 }
 
 .row:nth-child(3) {
-  background: #A77044;
+  background: #ffffff;
 }
 
 .row:nth-child(4) {
-  background: #ffffff;
+  background: #f2f2f2;
 }
 
 .row:nth-child(5) {
@@ -135,4 +134,20 @@
   position: relative;
   top: 28%;
   left: 5%;
+}
+
+#headerFont {
+  position: relative;
+  display: inline-block;
+  line-height: 40px;
+  font-family: "Orbitron";
+  font-size: 20px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
 }
