@@ -42,10 +42,10 @@
   border-bottom: 1.5px solid #000000;
 }
 
-.name {
+.rank {
   position: relative;
   display: inline-block;
-  width: 60%;
+  width: 15%;
   line-height: 40px;
   top: -2px;
   left: 10px;
@@ -61,11 +61,30 @@
   text-transform: none;
 }
 
+.name {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  line-height: 40px;
+  top: -2px;
+  left: 10px;
+  font-family: "Orbitron";
+  font-size: 20px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
 .score {
   position: relative;
   display: inline-block;
   width: 25%;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: "Orbitron";
   font-size: 20px;
   letter-spacing: 0px;
   word-spacing: 0px;
