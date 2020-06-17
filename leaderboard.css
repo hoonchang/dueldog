@@ -97,19 +97,19 @@
 }
 
 .row:nth-child(1) {
-  background: #1ed661;
+  background: #FEE101;
 }
 
 .row:nth-child(2) {
-  background: #c1bfbf;
+  background: #D7D7D7;
 }
 
 .row:nth-child(3) {
-  background: #1ed661;
+  background: #A77044;
 }
 
 .row:nth-child(4) {
-  background: #c1bfbf;
+  background: #1ed661;
 }
 
 .row:nth-child(5) {
