@@ -1,4 +1,4 @@
-#container {
+#lbcontainer {
   width: 276px;
   height: auto;
   border-right: 2px solid #000000;
@@ -6,20 +6,20 @@
   border-bottom: 2px solid #000000;
 }
 
-#title {
+#lbcontainer #title {
   width: 276px;
   height: 50px;
   background: #000000;
 }
 
-#header {
+#lbcontainer #header {
   width: 276px;
   height: 40px;
   position: relative;
   background: #1ed661;
 }
 
-.row {
+#lbcontainer .row {
   position: relative;
   display: block;
   width: 100%;
@@ -27,7 +27,7 @@
   border-bottom: 1px solid #d2d0d0;
 }
 
-.rank {
+#lbcontainer .row .rank {
   position: relative;
   display: inline-block;
   width: 27%;
@@ -45,7 +45,7 @@
   text-transform: none;
 }
 
-.name {
+#lbcontainer .row .name {
   position: relative;
   display: inline-block;
   width: 48%;
@@ -62,7 +62,7 @@
   text-transform: none;
 }
 
-.score {
+#lbcontainer .row .score {
   position: relative;
   display: inline-block;
   width: 25%;
@@ -79,28 +79,28 @@
   line-height: 40px;
 }
 
-.row:nth-child(3) {
+#lbcontainer .row:nth-child(3) {
   background: #ffffff;
 }
 
-.row:nth-child(4) {
+#lbcontainer .row:nth-child(4) {
   background: #f2f2f2;
 }
 
-.row:nth-child(5) {
+#lbcontainer .row:nth-child(5) {
   background: #ffffff;
 }
 
-.row:nth-child(6) {
+#lbcontainer .row:nth-child(6) {
   background: #f2f2f2;
 }
 
-.row:nth-child(7) {
+#lbcontainer .row:nth-child(7) {
   background: #ffffff;
   border-bottom: 0px solid #000000;
 }
 
-#titleFont {
+#lbcontainer #title #titleFont {
   font-family: Helvetica, Arial, Sans, sans-serif;
   font-weight: bold;
   font-size: 20px;
@@ -111,7 +111,7 @@
   left: 3%;
 }
 
-#headerFont {
+#lbcontainer #header #headerFont {
   position: relative;
   display: inline-block;
   line-height: 40px;
