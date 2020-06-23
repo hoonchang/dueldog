@@ -1,72 +1,48 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-
-  <title>Home Page</title>
-
-  <link rel="stylesheet" href="leaderboard.css">
-  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=MuseoModerno' rel='stylesheet'>
-
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
 
 
-<body>
-
-  <div id="lbcontainer">
-    <div id="title">
-      <div id="titleFont"> WEEKLY LADDER </div><img style="position:relative; left:235px; top:-19px; width:40px; height:40px" src="https://hoonchang.github.io/dueldog/dogpoundtr1.png" alt="corner"></div>
-
-    <div id="header"><div id="headerFont"><span style="margin-left:8px;"> Rank </span><span style="margin-left:10px;"> Player </span><span style="margin-left:60px;"> Score </span>
-    </div>
-
-    </div>
+  <body>
 
     <div class="row">
-      <div class="rank"><img style="position:absolute; left:-14px; top: -23px; width:35px; padding-right: 40px; height:35px" src="https://hoonchang.github.io/dueldog/firstplace.png" alt="1st"></div><div class="name" id="player1"></div><div class="score" id="score1"></div>
+      <div class="col-md-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://hoonchang.github.io/dueldog/background.jpg" alt="First slide">
     </div>
-
-    <div class="row">
-      <div class="rank">2</div><div class="name" id="player2"></div><div class="score" id="score2"></div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://hoonchang.github.io/dueldog/background.jpg" alt="Second slide">
     </div>
-
-    <div class="row">
-      <div class="rank">3</div><div class="name" id="player3"></div><div class="score" id="score3"></div>
-    </div>
-
-    <div class="row">
-      <div class="rank">4</div><div class="name" id="player4"></div><div class="score" id="score4"></div>
-    </div>
-
-    <div class="row">
-      <div class="rank">5</div><div class="name" id="player5"></div><div class="score" id="score5"></div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://hoonchang.github.io/dueldog/background.jpg" alt="Third slide">
     </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      </div>
+    </div>
 
-<script>
-  var player = ["AlMilker", "Tiski", "NoVa", "nitsuA", "fiend"];
-  var score = ["500", "400", "300", "200", "100"];
 
-  function getElement(id, arr, num) {
-  	document.getElementById(id).innerHTML = arr[num];
-  	return;
-	}
-
-    getElement("player1", player, 0);
- 		getElement("player2", player, 1);
-  	getElement("player3", player, 2);
-  	getElement("player4", player, 3);
-  	getElement("player5", player, 4);
-
-  	getElement("score1", score, 0);
-  	getElement("score2", score, 1);
-  	getElement("score3", score, 2);
-  	getElement("score4", score, 3);
-  	getElement("score5", score, 4);
-
-  </script>
-
-</body>
-
+  </body>
 </html>
