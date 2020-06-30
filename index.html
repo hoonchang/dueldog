@@ -1,40 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Carousel Height and Image Vertical Positioning (increase bottom: % to move up) -->
     <style>
-      .button {
-        background-color: #1ed661;
-        border: none;
-        color: white;
-        padding: 16px 16px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: .5s;
-        cursor: pointer;
-        border-radius: 10px;
-        outline: none;
-      }
-
-      .button1 {
-        background-color: #1ed661;
-        color: white;
-      }
-
-      .button1:hover {
-        background-color: white;
-        color: #1ed661;
-        border: 2px solid #1ed661;
-      }
+    .item {
+      height: 84vh;
+    }
+    .item img{
+      display: block;
+      width: 100%;
+    }
+    .img1{
+      position: relative;
+      bottom: 15%;
+    }
+    .img2{
+      position: relative;
+      bottom: 15%;
+    }
+    .img3{
+      position: relative;
+      bottom: 15%;
+    }
     </style>
+
+    <!-- Carousel Indicators - changed from default circles to dashes -->
+    <style>
+    .carousel-indicators {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      z-index: 15;
+      width: 60%;
+      padding-left: 0;
+      margin-left: -30%;
+      text-align: center;
+      list-style: none;
+    }
+    .carousel-indicators li {
+      display: inline-block;
+      width: 30px;
+      height: 3px;
+      margin: 1px;
+      text-indent: -999px;
+      cursor: pointer;
+      background-color: #fff \9;
+      background-color: rgba(255,255,255, 0.5);
+      border: 0px solid #fff;
+      border-radius: 0px;
+    }
+    .carousel-indicators .active{
+      display: inline-block;
+      width: 30px;
+      height: 3px;
+      margin: 1px;
+      text-indent: -999px;
+      cursor: pointer;
+      background-color: #fff \9;
+      background-color: rgba(255,255,255, 0.9);
+      border: 1px solid #fff;
+      border-radius: 0px;
+    }
+    </style>
+
   </head>
 
 
   <body>
-    <button class="button button1" onclick=" window.open('https://forms.gle/r8gEiZQoorXfSpW96','_blank')"> Bug Report </button>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="img1">
+            <img src="https://hoonchang.github.io/dueldog/background1.jpg" alt="First slide">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img2">
+            <!-- Temporary image - not using for actual site -->
+            <img src="https://hoonchang.github.io/dueldog/background2.jpg" alt="Second slide">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img3">
+            <!-- Temporary image - not using for actual site -->
+            <img src="https://hoonchang.github.io/dueldog/background3.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   </body>
 
 </html>
