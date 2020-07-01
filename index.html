@@ -135,8 +135,41 @@
 
   <body>
 
-    <img src="https://hoonchang.github.io/dueldog/background2original.jpg" alt="Second slide">
-    <img src="https://hoonchang.github.io/dueldog/test.png" alt="Third slide">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="carouselImg1">
+            <img src="https://hoonchang.github.io/dueldog/background1.jpg" alt="First slide">
+          </div>
+        </div>
+        <div class="item">
+          <div class="carouselImg2">
+            <img src="https://hoonchang.github.io/dueldog/background2original.jpg" alt="Second slide">
+          </div>
+        </div>
+        <div class="item">
+          <div class="carouselImg3">
+            <img src="https://hoonchang.github.io/dueldog/background2test.png" alt="Third slide">
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
