@@ -3,190 +3,116 @@
 
   <head>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Carousel Height and Image/Button Vertical Positioning (increase bottom: % to move up) -->
-    <style>
-    .item {
-      height: 84vh;
-    }
-    .item img{
-      display: block;
-      width: 100%;
-    }
-    .carouselImg1{
-      position: relative;
-      bottom: 15%;
-    }
-    .carouselImg2{
-      position: relative;
-      bottom: 15%;
-    }
-    .carouselImg3{
-      position: relative;
-      bottom: 10%;
-    }
-    .carouselButton2{
-      position: absolute;
-      bottom: 13%;
-      right: 20%;
-    }
-    .carouselButton3{
-      position: absolute;
-      bottom: 13%;
-      left: 12%;
-    }
-    </style>
-
-    <!-- Button CSS pulled from website - prob don't have to use this as the original CSS exists on website already -->
-    <style>
-    .btn {
-      display: inline-block;
-      margin-bottom: 0;
-      font-weight: normal;
-      text-align: center;
-      white-space: nowrap;
-      vertical-align: middle;
-      cursor: pointer;
-      background-image: none;
-      border: 1px solid transparent;
-      padding: 6px 12px;
-      font-size: 14px;
-      line-height: 1.42857143;
-      border-radius: 4px;
-      user-select: none;
-    }
-
-    .btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus {
-    background-color: #17b24f;
-    border-color: #17b24f;
-    color: #fff;
-    transition-duration: 0.6s;
-    }
-
-    .btn.btn-outline-primary {
-      padding: 3px 7rem 6px 4rem;
-      border: 4px solid;
-      font-family: "Open Sans", sans-serif;
-      font-size: 3.4rem;
-      font-weight: 800;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: 0.3px;
-      text-transform: uppercase;
-      color: #17b24f;
-      border-color: #17b24f;
-      text-align: center;
-    }
-    </style>
-
-    <!-- Carousel Indicators - changed from default circles to dashes -->
-    <style>
-    .carousel-indicators {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      z-index: 15;
-      width: 60%;
-      padding-left: 0;
-      margin-left: -30%;
-      text-align: center;
-      list-style: none;
-    }
-    .carousel-indicators li {
-      display: inline-block;
-      width: 30px;
-      height: 3px;
-      margin: 1px;
-      text-indent: -999px;
-      cursor: pointer;
-      background-color: #fff \9;
-      background-color: rgba(255,255,255, 0.5);
-      border: 0px solid #fff;
-      border-radius: 0px;
-    }
-    .carousel-indicators .active{
-      display: inline-block;
-      width: 30px;
-      height: 3px;
-      margin: 1px;
-      text-indent: -999px;
-      cursor: pointer;
-      background-color: #fff \9;
-      background-color: rgba(255,255,255, 0.9);
-      border: 1px solid #fff;
-      border-radius: 0px;
-    }
-    </style>
+    <script src="dueldog.js"></script>
+    <link rel="stylesheet" href="calendar.css">
 
   </head>
 
 
   <body>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
+    <div class="app">
+    <div class="app-day-container hidden">
+        <div class="day-header day-header--large">
+            <div class="day-header-bg"></div>
+            <div class="day-header-close"></div>
+            <div class="day-header-content">
+                <div class="day-header-title">
+                    <div class="day-header-title-day"></div>
+                    <div class="day-header-title-month">July</div>
+                </div>
+                <div class="day-header-event"></div>
+            </div>
+        </div>
+        <div class="day-content">
+            <p></p>
+        </div>
+    </div>
+    <div class="app-header">
+        <div class="nav-btn"></div>
+        <div class="month">July</div>
+        <div class="header-right-wrapper">
+            <div class="menu-btn"></div>
+        </div>
+    </div>
+    <div class="app-calendar">
+        <div class="calendar-row day-row">
+            <div class="day day-name">S</div>
+            <div class="day day-name">M</div>
+            <div class="day day-name">T</div>
+            <div class="day day-name">W</div>
+            <div class="day day-name">T</div>
+            <div class="day day-name">F</div>
+            <div class="day day-name">S</div>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <div class="carouselImg1">
-            <img src="https://hoonchang.github.io/dueldog/background1.jpg" alt="First slide">
-          </div>
         </div>
-        <div class="item">
-          <div class="carouselImg2">
-            <img src="https://hoonchang.github.io/dueldog/b2.png" alt="Second slide">
-          </div>
-          <div class="carouselButton2">
-            <a href="https://dueldog.com/Account/Register" class="btn btn-outline-primary">join now</a>
-          </div>
+        <div class="calendar-row">
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day event blue" data-day="30" data-event="Regular Queue (8pm EST Start)">30</div>
+            <div class="day event pink" data-day="1" data-event="Queue Closed (Maintenance)">1</div>
+            <div class="day event blue" data-day="2" data-event="Regular Queue (8pm EST Start)">2</div>
+            <div class="day event pink" data-day="3" data-event="Queue Closed (Holiday)">3</div>
+            <div class="day">4</div>
         </div>
-        <div class="item">
-          <div class="carouselImg3">
-            <img src="https://hoonchang.github.io/dueldog/b3.png" alt="Third slide">
-          </div>
-          <div class="carouselButton3">
-            <a href="https://dueldog.com/Game/List" class="btn btn-outline-primary">play now</a>
-          </div>
+        <div class="calendar-row">
+            <div class="day">5</div>
+            <div class="day event blue" data-day="6" data-event="Regular Queue (8pm EST Start)">6</div>
+            <div class="day event blue" data-day="7" data-event="Regular Queue (8pm EST Start)">7</div>
+            <div class="day event pink" data-day="8" data-event="Queue Closed (Maintenance)">8</div>
+            <div class="day event blue" data-day="9" data-event="Regular Queue (8pm EST Start)">9</div>
+            <div class="day event purple" data-day="10" data-event="Ladder Ends; Regular Queue (8pm EST Start)">10</div>
+            <div class="day">11</div>
         </div>
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
+        <div class="calendar-row">
+            <div class="day">12</div>
+            <div class="day event blue" data-day="13" data-event="Regular Queue (8pm EST Start)">13</div>
+            <div class="day event blue" data-day="14" data-event="Regular Queue (8pm EST Start)">14</div>
+            <div class="day event pink" data-day="15" data-event="Queue Closed (Maintenance)">15</div>
+            <div class="day event blue" data-day="16" data-event="Regular Queue (8pm EST Start)">16</div>
+            <div class="day event blue" data-day="17" data-event="Regular Queue (8pm EST Start)">17</div>
+            <div class="day">18</div>
+        </div>
+        <div class="calendar-row">
+            <div class="day">19</div>
+            <div class="day event blue" data-day="20" data-event="Regular Queue (8pm EST Start)">20</div>
+            <div class="day event blue" data-day="21" data-event="Regular Queue (8pm EST Start)">21</div>
+            <div class="day event pink" data-day="22" data-event="Queue Closed (Maintenance)">22</div>
+            <div class="day event blue" data-day="23" data-event="Regular Queue (8pm EST Start)">23</div>
+            <div class="day event blue" data-day="24" data-event="Regular Queue (8pm EST Start)">24</div>
+            <div class="day">25</div>
+        </div>
+        <div class="calendar-row">
+            <div class="day">26</div>
+            <div class="day event blue" data-day="27" data-event="Regular Queue (8pm EST Start)">27</div>
+            <div class="day event blue" data-day="28" data-event="Regular Queue (8pm EST Start)">28</div>
+            <div class="day event pink" data-day="29" data-event="Queue Closed (Maintenance)">29</div>
+            <div class="day event blue" data-day="30" data-event="Regular Queue (8pm EST Start)">30</div>
+            <div class="day event blue" data-day="31" data-event="Regular Queue (8pm EST Start)">31</div>
+            <div class="day">1</div>
+        </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <div class="app-divider"></div>
+
+    <p style="position:relative;left:10px;text-transform: uppercase">
+    important dates
+    </p>
+
+    <div class="app-events">
+        <div class="app-event">
+            <div class="event-date pink">3</div>
+            <div class="event-title">Queue Closed (Holiday)</div>
+        </div>
+        <div class="app-event">
+            <div class="event-date purple">10</div>
+            <div class="event-title">Weekly Ladder Ends</div>
+        </div>
+
+    </div>
+</div>
 
   </body>
 
