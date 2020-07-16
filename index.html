@@ -1,120 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
   <head>
-    
-    <link rel="stylesheet" href="calendar.css">
+    <style>
+      .button {
+        background-color: #1ed661;
+        border: none;
+        color: white;
+        padding: 16px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: .5s;
+        cursor: pointer;
+        border-radius: 10px;
+        outline: none;
+      }
 
+      .button1 {
+        background-color: #1ed661;
+        color: white;
+      }
+
+      .button1:hover {
+        background-color: white;
+        color: #1ed661;
+        border: 2px solid #1ed661;
+      }
+    </style>
+    <script>
+      var giftClaimedToday = false;
+
+      function giftButtonClicked(){
+        if (giftClaimedToday == true){
+          alert("Please wait 24 hrs to claim your next gift!");
+        }
+        else{
+          if (SteamFriends.GetPersonaName().includes("dueldog.com")){
+            //give bonus funds
+            alert("You received your gift!");
+            giftClaimedToday = true
+          }
+          else{
+            alert("Please add dueldog.com to your steam username!");
+          }
+        }
+        if(giftClaimedToday == true){
+          //wait 24 hrs
+          giftClaimedToday = false
+        }
+      }
+    </script>
   </head>
 
 
   <body>
-
-    <div class="app">
-    <div class="app-day-container hidden">
-        <div class="day-header day-header--large">
-            <div class="day-header-bg"></div>
-            <div class="day-header-close"></div>
-            <div class="day-header-content">
-                <div class="day-header-title">
-                    <div class="day-header-title-day"></div>
-                    <div class="day-header-title-month">July</div>
-                </div>
-                <div class="day-header-event"></div>
-            </div>
-        </div>
-        <div class="day-content">
-            <p></p>
-        </div>
-    </div>
-    <div class="app-header">
-        <div class="nav-btn"></div>
-        <div class="month">July</div>
-        <div class="header-right-wrapper">
-            <div class="menu-btn"></div>
-        </div>
-    </div>
-    <div class="app-calendar">
-        <div class="calendar-row day-row">
-            <div class="day day-name">S</div>
-            <div class="day day-name">M</div>
-            <div class="day day-name">T</div>
-            <div class="day day-name">W</div>
-            <div class="day day-name">T</div>
-            <div class="day day-name">F</div>
-            <div class="day day-name">S</div>
-
-        </div>
-        <div class="calendar-row">
-            <div class="day">28</div>
-            <div class="day">29</div>
-            <div class="day event blue" data-day="30" data-event="Regular Queue (8pm EST Start)">30</div>
-            <div class="day event pink" data-day="1" data-event="Queue Closed (Maintenance)">1</div>
-            <div class="day event blue" data-day="2" data-event="Regular Queue (8pm EST Start)">2</div>
-            <div class="day event pink" data-day="3" data-event="Queue Closed (Holiday)">3</div>
-            <div class="day">4</div>
-        </div>
-        <div class="calendar-row">
-            <div class="day">5</div>
-            <div class="day event blue" data-day="6" data-event="Regular Queue (8pm EST Start)">6</div>
-            <div class="day event blue" data-day="7" data-event="Regular Queue (8pm EST Start)">7</div>
-            <div class="day event pink" data-day="8" data-event="Queue Closed (Maintenance)">8</div>
-            <div class="day event blue" data-day="9" data-event="Regular Queue (8pm EST Start)">9</div>
-            <div class="day event purple" data-day="10" data-event="Ladder Ends; Regular Queue (8pm EST Start)">10</div>
-            <div class="day">11</div>
-        </div>
-        <div class="calendar-row">
-            <div class="day">12</div>
-            <div class="day event blue" data-day="13" data-event="Regular Queue (8pm EST Start)">13</div>
-            <div class="day event blue" data-day="14" data-event="Regular Queue (8pm EST Start)">14</div>
-            <div class="day event pink" data-day="15" data-event="Queue Closed (Maintenance)">15</div>
-            <div class="day event blue" data-day="16" data-event="Regular Queue (8pm EST Start)">16</div>
-            <div class="day event blue" data-day="17" data-event="Regular Queue (8pm EST Start)">17</div>
-            <div class="day">18</div>
-        </div>
-        <div class="calendar-row">
-            <div class="day">19</div>
-            <div class="day event blue" data-day="20" data-event="Regular Queue (8pm EST Start)">20</div>
-            <div class="day event blue" data-day="21" data-event="Regular Queue (8pm EST Start)">21</div>
-            <div class="day event pink" data-day="22" data-event="Queue Closed (Maintenance)">22</div>
-            <div class="day event blue" data-day="23" data-event="Regular Queue (8pm EST Start)">23</div>
-            <div class="day event blue" data-day="24" data-event="Regular Queue (8pm EST Start)">24</div>
-            <div class="day">25</div>
-        </div>
-        <div class="calendar-row">
-            <div class="day">26</div>
-            <div class="day event blue" data-day="27" data-event="Regular Queue (8pm EST Start)">27</div>
-            <div class="day event blue" data-day="28" data-event="Regular Queue (8pm EST Start)">28</div>
-            <div class="day event pink" data-day="29" data-event="Queue Closed (Maintenance)">29</div>
-            <div class="day event blue" data-day="30" data-event="Regular Queue (8pm EST Start)">30</div>
-            <div class="day event blue" data-day="31" data-event="Regular Queue (8pm EST Start)">31</div>
-            <div class="day">1</div>
-        </div>
-    </div>
-
-
-
-    <div class="app-divider"></div>
-
-    <p style="position:relative;left:10px;text-transform: uppercase">
-    important dates
-    </p>
-
-    <div class="app-events">
-        <div class="app-event">
-            <div class="event-date pink">3</div>
-            <div class="event-title">Queue Closed (Holiday)</div>
-        </div>
-        <div class="app-event">
-            <div class="event-date purple">10</div>
-            <div class="event-title">Weekly Ladder Ends</div>
-        </div>
-
-    </div>
-</div>
-
-  <script src="dueldog.js"></script>
-
+    <button class="button button1" onclick="giftButtonClicked();"> Claim Gift </button>
   </body>
 
 </html>
