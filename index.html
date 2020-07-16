@@ -2,62 +2,105 @@
 <html>
 
   <head>
+
     <style>
-      .button {
-        background-color: #1ed661;
+      .giftButtonContainer {
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .giftButton {
+        min-width: 250px;
+        min-height: 60px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        font-weight: 700;
+        color: #313133;
+        background: white;
         border: none;
-        color: white;
-        padding: 16px 16px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: .5s;
+        border-radius: 1000px;
+        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+        transition: all 0.3s ease-in-out 0s;
         cursor: pointer;
-        border-radius: 10px;
         outline: none;
+        position: relative;
+        padding: 10px;
+        border: 2px solid #1ed661;
+        }
+
+      .giftButton::after {
+        content: '';
+        width: 30px; height: 30px;
+        border-radius: 100%;
+        border: 6px solid #1ed661;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: ring 1.5s infinite;
       }
 
-      .button1 {
+      .giftButton:hover {
         background-color: #1ed661;
-        color: white;
-      }
-
-      .button1:hover {
-        background-color: white;
-        color: #1ed661;
+        color: black;
         border: 2px solid #1ed661;
       }
+
+      .giftButton:hover::after {
+        animation: none;
+        display: none;
+      }
+
+      @keyframes ring {
+        0% {
+          width: 30px;
+          height: 30px;
+          opacity: 1;
+        }
+        100% {
+          width: 200px;
+          height: 200px;
+          opacity: 0;
+        }
+      }
     </style>
+
     <script>
-      var giftClaimedToday = false;
+      var check24Hours = true;
+      var checkUsername = true;
 
       function giftButtonClicked(){
-        if (giftClaimedToday == true){
+
+        if (check24Hours == false){
           alert("Please wait 24 hrs to claim your next gift!");
         }
         else{
-          if (SteamFriends.GetPersonaName().includes("dueldog.com")){
-            //give bonus funds
+          if (checkUsername == true){
             alert("You received your gift!");
-            giftClaimedToday = true
           }
           else{
             alert("Please add dueldog.com to your steam username!");
           }
         }
-        if(giftClaimedToday == true){
-          //wait 24 hrs
-          giftClaimedToday = false
-        }
       }
     </script>
+
   </head>
 
 
   <body>
-    <button class="button button1" onclick="giftButtonClicked();"> Claim Gift </button>
+
+    <div class="giftButtonContainer">
+
+      <button class="giftButton" onclick="giftButtonClicked()">Claim Gift</button>
+
+    </div>
+
   </body>
 
 </html>
