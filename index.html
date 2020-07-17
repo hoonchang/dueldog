@@ -107,14 +107,14 @@
       function giftButtonClicked(){
 
         if (check24Hours == false){
-
+  				document.getElementById("modal-body").innerHTML = "Please wait 24 hrs to claim your next bonus!";
         }
         else{
           if (checkUsername == true){
-
+  				 document.getElementById("modal-body").innerHTML = "You received your bonus!";
           }
           else{
-
+  				 document.getElementById("modal-body").innerHTML = "Please add dueldog.com to your steam username!";
           }
         }
       }
@@ -140,8 +140,7 @@
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header"></div>
-      <div class="modal-body" style="text-align: center">
-        You received your bonus!
+      <div class="modal-body" style="text-align: center" id="modal-body">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
@@ -149,17 +148,3 @@
     </div>
   </div>
 </div>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  </body>
-
-</html>
