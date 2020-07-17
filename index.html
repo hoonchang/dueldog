@@ -18,6 +18,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <!-- Claim Bonus Button -->
     <style>
       .giftButtonContainer {
         height: 250px;
@@ -71,7 +72,6 @@
         display: none;
       }
 
-
       @keyframes ring {
         0% {
           width: 30px;
@@ -86,6 +86,7 @@
       }
     </style>
 
+    <!-- Popup Message -->
     <style>
       .modal-header {
           border-bottom: 0 none;
@@ -94,12 +95,14 @@
       .modal-footer {
           border-top: 0 none;
       }
+
       .btn-secondary {
           background-color: #1ed661;
         color: black;
       }
     </style>
 
+    <!-- Check if player is eligible and show different message -->
     <script>
       var check24Hours = true;
       var checkUsername = true;
@@ -127,28 +130,23 @@
 
     <div class="giftButtonContainer">
 
-
-      <button type="button" class="giftButton" onclick="giftButtonClicked()" data-toggle="modal" data-target="#exampleModal">
-  Claim Bonus
-</button>
+      <button type="button" class="giftButton" onclick="giftButtonClicked()" data-toggle="modal" data-target="#exampleModal">Claim Bonus</button>
 
     </div>
 
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header"></div>
-      <div class="modal-body" style="text-align: center" id="modal-body">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header"></div>
+          <div class="modal-body" style="text-align: center" id="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
