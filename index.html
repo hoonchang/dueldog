@@ -56,6 +56,7 @@
         display: none;
       }
 
+
       @keyframes ring {
         0% {
           width: 30px;
@@ -70,6 +71,65 @@
       }
     </style>
 
+    <style>
+      /* Popup container */
+      .giftPopupContainer {
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        display: inline-block;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* The actual popup (appears on top) */
+      .giftPopupContainer .giftPopup {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px 10px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 40%;
+        margin-left: -92px;
+      }
+
+      /* Popup arrow */
+      .giftPopupContainer .giftPopup::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+
+      /* Toggle this class when clicking on the popup container (hide and show the popup) */
+      .giftPopupContainer .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s
+      }
+
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+    </style>
+
     <script>
       var check24Hours = true;
       var checkUsername = true;
@@ -77,14 +137,17 @@
       function giftButtonClicked(){
 
         if (check24Hours == false){
-          alert("Please wait 24 hrs to claim your next gift!");
+  				document.getElementById("wait24Hrs").classList.toggle("show");
+           setTimeout(() => {  document.getElementById("wait24Hrs").classList.toggle("show"); }, 2000);
         }
         else{
           if (checkUsername == true){
-            alert("You received your gift!");
+  				 document.getElementById("giftClaimed").classList.toggle("show");
+           setTimeout(() => {  document.getElementById("giftClaimed").classList.toggle("show"); }, 2000);
           }
           else{
-            alert("Please add dueldog.com to your steam username!");
+  				 document.getElementById("fixUsername").classList.toggle("show");
+           setTimeout(() => {  document.getElementById("fixUsername").classList.toggle("show"); }, 2000);
           }
         }
       }
@@ -99,6 +162,12 @@
 
       <button class="giftButton" onclick="giftButtonClicked()">Claim Gift</button>
 
+    </div>
+
+    <div class="giftPopupContainer">
+      <span class="giftPopup" id="wait24Hrs">Please wait 24 hrs to claim your next gift!</span>
+      <span class="giftPopup" id="giftClaimed">You received your gift!</span>
+      <span class="giftPopup" id="fixUsername">Please add dueldog.com to your steam username!</span>
     </div>
 
   </body>
