@@ -1,166 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Claim Bonus Button -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap" rel="stylesheet">
     <style>
-      .giftButtonContainer {
-        height: 250px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      #betaBox {
+        height: 30px;
+        width: 80px;
+        padding-top: 7px;
+        border-radius: 10px;
+        background-color: DodgerBlue;
+        text-align: center;
       }
 
-      .giftButton {
-        min-width: 250px;
-        min-height: 60px;
-        font-family: 'Nunito', sans-serif;
-        font-size: 22px;
-        text-transform: uppercase;
-        letter-spacing: 1.3px;
+      #betaText {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 19px;
         font-weight: 700;
-        color: #313133;
-        background: white;
-        border: none;
-        border-radius: 1000px;
-        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-        transition: all 0.3s ease-in-out 0s;
-        cursor: pointer;
-        outline: none;
-        position: relative;
-        padding: 10px;
-        border: 2px solid #1ed661;
-        }
-
-      .giftButton::after {
-        content: '';
-        width: 30px; height: 30px;
-        border-radius: 100%;
-        border: 6px solid #1ed661;
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: ring 1.5s infinite;
-      }
-
-      .giftButton:hover {
-        background-color: #1ed661;
-        color: black;
-        border: 2px solid #1ed661;
-      }
-
-      .giftButton:hover::after {
-        animation: none;
-        display: none;
-      }
-
-      @keyframes ring {
-        0% {
-          width: 30px;
-          height: 30px;
-          opacity: 1;
-        }
-        100% {
-          width: 200px;
-          height: 200px;
-          opacity: 0;
-        }
+        color: white;
       }
     </style>
-
-    <!-- Popup Message -->
-    <style>
-      .modal-header {
-          border-bottom: 0 none;
-      }
-
-      .modal-footer {
-          border-top: 0 none;
-      }
-
-      .btn-secondary {
-          background-color: #1ed661;
-        color: black;
-      }
-    </style>
-
-    <!-- Check if player is eligible and show different message -->
-    <script>
-      var check24Hours = true;
-      var checkUsername = true;
-      var checkAccount = true;
-
-      function giftButtonClicked(){
-
-        if (check24Hours == false){
-  				document.getElementById("modal-body").innerHTML = "Please wait 24 hrs to claim your next bonus!";
-        }
-        else{
-          if (checkUsername == true && checkAccount == true){
-  				 document.getElementById("modal-body").innerHTML = "You received your bonus!";
-          }
-          else if (checkAccount == false){
-  				 document.getElementById("modal-body").innerHTML = "Please verify your account and make an initial deposit!";
-          }
-          else {
-  				 document.getElementById("modal-body").innerHTML = "Please add dueldog.com to your steam username!";
-          }
-        }
-      }
-    </script>
-
   </head>
 
 
   <body>
-
-    <div class="giftButtonContainer">
-
-      <button type="button" class="giftButton" onclick="giftButtonClicked()" data-toggle="modal" data-target="#exampleModal">Claim Bonus</button>
-
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-          <div class="modal-header"></div>
-          <div class="modal-body" style="text-align: center" id="modal-body">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-          </div>
-        </div>
+    <div id="betaBox">
+      <div id="betaText">
+        BETA
       </div>
     </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
   </body>
-
 </html>
