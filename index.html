@@ -37,7 +37,7 @@
 
   <body>
 
-    <p>commit 274</p>
+    <p>commit 275</p>
 
     <img class="img-fluid z-depth-1" height=200px width=200px src="https://hoonchang.github.io/dueldog/picture.PNG" alt="video" data-toggle="modal" data-target="#carouselVideo">
 
@@ -57,6 +57,15 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  </body>
+    <script>
+      $('#carouselVideo').on('hide.bs.modal', function(e) {
+      var $if = $(e.delegateTarget).find('iframe');
+      var src = $if.attr("src");
+      $if.attr("src", '/empty.html');
+      $if.attr("src", src);
+    });
+    </script>
 
+  </body>
+  
  </html>
