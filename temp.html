@@ -18,6 +18,8 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+
     <!-- Carousel Height and Image/Button Vertical Positioning (increase bottom: % to move up) -->
     <style>
     .item {
@@ -143,31 +145,31 @@
          height: 68%;
     }
     .descriptionBox{
-      border-top-right-radius: 0px;
+      border-top-right-radius: 10px;
       border-top-left-radius:10px;
       border-bottom-right-radius:0px;
-      border-bottom-left-radius:10px;
-      height:200px;
-      width:150px;
+      border-bottom-left-radius:0px;
+      height:30px;
+      width:300px;
       color:black;
-      background-color: #40bd6e;
+      background-color: #1ed661;
       position: absolute;
     }
     .img-fluid{
-      border-top-right-radius: 10px;
+      border-top-right-radius: 0px;
       border-top-left-radius:0px;
       border-bottom-right-radius:10px;
-      border-bottom-left-radius:0px;
-      height:200px;
-      width:150px;
-      max-width: 150px;
-      left:150px;
+      border-bottom-left-radius:10px;
+      height:170px;
+      width:300px;
+      max-width: 300px;
+      top:30px;
       position: absolute;
     }
     .carouselButton1 .btn {
       position: absolute;
-      top: 50%;
-      right: 20%;
+      top: 45%;
+      left: 43%;
       background-color: transparent;
       color: #1ed661;
       height:50px;
@@ -181,8 +183,8 @@
     }
     .carouselButton1 .btn:hover {
       position: absolute;
-      top: 50%;
-      right: 20%;
+      top: 45%;
+      left: 43%;
       background-color: #1ed661;
       color: white;
       height:50px;
@@ -193,7 +195,15 @@
       text-align:center;
       outline:none;
     }
-
+    .videoText {
+    font-family: 'Audiowide';font-size: 15px;
+    position: absolute;
+    top:20%;
+    padding-left:2%;
+    padding-right:2%;
+    text-align:center;
+    color:black;
+    }
     </style>
 
   </head>
@@ -217,9 +227,11 @@
           </div>
           <div class="carouselButton1">
             <div class="descriptionBox">
+              <div class="videoText">
               1v1 CS:GO matches for cash Prizes
+              </div>
             </div>
-            <img class="img-fluid" src="https://hoonchang.github.io/dueldog/cs.png" alt="video" data-toggle="modal" data-target="#carouselVideo">
+            <img class="img-fluid" src="https://hoonchang.github.io/dueldog/screenshot.png" alt="video" data-toggle="modal" data-target="#carouselVideo">
             <button type="button" class="btn" data-toggle="modal" data-target="#carouselVideo">
               <span class="glyphicon glyphicon-play" style="font-size:26px"></span>
             </button>
