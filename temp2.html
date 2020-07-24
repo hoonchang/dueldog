@@ -44,9 +44,12 @@
     .carouselButton1{
       position: absolute;
       top: 20%;
-      right: 25%;
-      height: 200px;
-      width: 300px;
+      right: 20%;
+      height: 32vh;
+      width: 24vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .carouselButton2{
       position: absolute;
@@ -144,65 +147,40 @@
          width: 70%;
          height: 68%;
     }
-    .descriptionBox{
+    .img-fluid{
       border-top-right-radius: 10px;
       border-top-left-radius:10px;
-      border-bottom-right-radius:0px;
-      border-bottom-left-radius:0px;
-      height:30px;
-      width:300px;
-      color:black;
-      background-color: BlueViolet;
-      position: absolute;
-    }
-    .img-fluid{
-      border-top-right-radius: 0px;
-      border-top-left-radius:0px;
       border-bottom-right-radius:10px;
       border-bottom-left-radius:10px;
-      height:170px;
-      width:300px;
-      max-width: 300px;
-      top:30px;
-      position: absolute;
+      height:100%;
+      width:100%;
+      position:absolute;
     }
     .carouselButton1 .btn {
-      position: absolute;
-      top: 45%;
-      left: 42%;
-      background-color: #1ed661;
-      color: white;
-      height:50px;
-      width: 50px;
-      border-radius:50%;
-      border: solid 3px #1ed661;
-      cursor: pointer;
-      text-align:center;
-      outline:none;
-      transition-duration: 0.4s
-    }
-    .carouselButton1 .btn:hover {
-      position: absolute;
-      top: 45%;
-      left: 42%;
+
       background-color: BlueViolet;
       color: white;
-      height:50px;
-      width: 50px;
+      height:8vh;
+      width: 8vh;
       border-radius:50%;
-      border: solid 3px BlueViolet;
+      border: solid 0px BlueViolet;
       cursor: pointer;
       text-align:center;
       outline:none;
+      transition-duration: 0.4s;
+      opacity: 0.8;
+
     }
-    .videoText {
-    font-family: 'Audiowide';font-size: 15px;
-    position: absolute;
-    top:20%;
-    padding-left:2%;
-    padding-right:2%;
-    text-align:center;
-    color:white;
+    .carouselButton1 .btn:hover {
+      background-color: #1ed661;
+      color: white;
+      height:8vh;
+      width: 8vh;
+      border-radius:50%;
+      border: solid 0px #1ed661;
+      cursor: pointer;
+      text-align:center;
+      outline:none;
     }
     </style>
 
@@ -211,7 +189,7 @@
 
   <body>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-interval="false">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -226,14 +204,9 @@
             <img src="https://hoonchang.github.io/dueldog/background1.jpg" alt="First slide">
           </div>
           <div class="carouselButton1">
-            <div class="descriptionBox">
-              <div class="videoText">
-              1v1 CS:GO matches for cash Prizes
-              </div>
-            </div>
             <img class="img-fluid" src="https://hoonchang.github.io/dueldog/screenshot.png" alt="video" data-toggle="modal" data-target="#carouselVideo">
             <button type="button" class="btn" data-toggle="modal" data-target="#carouselVideo">
-              <span class="glyphicon glyphicon-play" style="font-size:26px"></span>
+              <span class="glyphicon glyphicon-play" style="font-size:4vh"></span>
             </button>
           </div>
         </div>
