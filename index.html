@@ -60,6 +60,7 @@
         width: 85%;
         padding-top: 5%;
         margin-left: 5%;
+        display: flex;
       }
 
       #affiliatePageJoinHeaderText {
@@ -106,13 +107,12 @@
       }
       .affiliateButtonContainer {
         padding-left: 10%;
-        padding-top: 5%;
       }
       .affiliateButton {
         min-width: 10%;
-        min-height: 5%x;
+        min-height: 5%;
         font-family: 'Nunito', sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         text-transform: uppercase;
         letter-spacing: 1.0px;
         font-weight: 700;
@@ -124,7 +124,10 @@
         cursor: pointer;
         outline: none;
         position: relative;
-        padding: 6px;
+        padding-top:3px;
+        padding-bottom: 3px;
+        padding-left:6px;
+        padding-right: 6px;
         border: 3px solid #1ed661;
         }
       .affiliateButton:hover {
@@ -137,6 +140,7 @@
         width: 94%;
         padding-top: 2%;
         margin-left: 2%;
+        display: flex;
       }
       #affiliatePageFAQHeaderText {
         font-family: 'Roboto', sans-serif;
@@ -148,6 +152,36 @@
         padding-left: 3%;
         padding-top: 2%;
         width: 94%;
+      }
+      .FAQButtonContainer {
+        padding-left: 25%;
+      }
+      .FAQButton {
+        min-width: 10%;
+        min-height: 5%;
+        font-family: 'Nunito', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1.0px;
+        font-weight: 700;
+        color: #313133;
+        background: #1ed661;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out 0s;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+        padding-top:3px;
+        padding-bottom: 3px;
+        padding-left:6px;
+        padding-right: 6px;
+        border: 3px solid #1ed661;
+        }
+      .FAQButton:hover {
+        background-color: white;
+        color: black;
+        border: 3px solid #1ed661;
       }
     </style>
 
@@ -163,16 +197,11 @@
     </div>
 
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-12">
         <div id="affiliatePageHeader">
           <div id="affiliatePageHeaderText">
             AFFILIATE PROGRAM
           </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="affiliateButtonContainer">
-          <button type="button" onclick="location.href='https://dueldog.com/Account/MyAccount';" class="affiliateButton">Already an Affiliate?</button>
         </div>
       </div>
     </div>
@@ -226,6 +255,9 @@
           <div id="affiliatePageJoinHeaderText">
             JOIN TODAY
           </div>
+          <div class="affiliateButtonContainer">
+          <button type="button" onclick="location.href='https://dueldog.com/Account/MyAccount';" class="affiliateButton">Already an Affiliate?</button>
+          </div>
         </div>
         <div id="affiliatePageFormContainer">
           <iframe style="position:absolute; height:100%; width: 90%;" src="https://docs.google.com/forms/d/e/1FAIpQLScQRpxgB9ZQSPbgcSmaxgCpUFy74GjZo3SAKETiIswLS29NsA/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -235,13 +267,16 @@
 
     <div class="row">
       <div class="col-md-12">
+
         <div id="affiliatePageFAQHeader">
           <div id="affiliatePageFAQHeaderText">
             FREQUENTLY ASKED QUESTIONS
           </div>
+          <div class="FAQButtonContainer">
+          <button type="button" onclick="location.href='https://dueldog.com/Home/FAQ';" class="FAQButton">QUESTIONS ABOUT DUELDOG?</button>
+          </div>
         </div>
         <div id="affiliateFAQContainer">
-
           <div class="panel-group" id="affiliateFAQ">
             <div class="panel panel-default">
               <div class="panel-heading">
